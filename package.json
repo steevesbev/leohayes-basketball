@@ -1,13 +1,24 @@
 {
-  "name": "leohayes-basketball-portal",
+  "name": "leohayes-basketball-api",
   "version": "1.0.0",
-  "description": "Leo Hayes Varsity Girls Basketball Team Portal",
-  "private": true,
+  "description": "Leo Hayes Varsity Girls Basketball API",
+  "main": "src/index.js",
   "scripts": {
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "dev:api": "cd backend && npm run dev",
-    "dev:ui": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
-    "start": "cd backend && npm start"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.13",
+    "sqlite3": "^5.1.7",
+    "better-sqlite3": "^9.6.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
